@@ -15,6 +15,7 @@ const App = () => {
     setTasks((prevTasks) => {
       const updatedTasks = [...prevTasks];
       updatedTasks.unshift({ text: inputText, id: Math.random().toString() });
+      
       return updatedTasks;
     });
   };
